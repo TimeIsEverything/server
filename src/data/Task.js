@@ -4,6 +4,12 @@ const taskSchema = new Schema({
   name: {
     type: String,
     required: true,
+    index: {
+      unique: true,
+    },
+  },
+  test: {
+    type: String,
   },
 })
 
